@@ -15,30 +15,43 @@ ul{
 #topo{
     width: 100%;
     height: 70px;
-    background-color: blueviolet;
+    background-color: rgb(109, 1, 209);
 }
 .container{
     display: flex;
     justify-content: space-between;
     width: 80%;
     margin: auto;
-    padding-top: 15px;
+    padding-top: 7px;
 }
 .container nav ul{
     display: flex;
     width: 50%;
     justify-content: space-between;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 .container h1{
     color: #ffffff;
-    border: 1px dotted yellow;
+}
+.container h1 img{
+    height: 70px;
+    size: unset;    
 }
 ul li a{
     padding-left: 40px;
-    color: #ffffff;
+    color: #dadada;
     font-size: 130%;
 }
 ul li a:hover{
-    text-decoration: underline;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: x-large;
+    margin-bottom: 0px;
+
+}
+body{
+    background-image:url(../img/beats.jpg);
+    background-attachment: fixed;
+    background-size: 105%;
+    height: 100%;
 }
