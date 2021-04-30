@@ -15,7 +15,7 @@ ul{
 #topo{
     width: 100%;
     height: 70px;
-    background-color: rgb(109, 1, 209);
+    background: linear-gradient(90deg, rgba(4,1,57,1) 0%, rgba(52,9,121,1) 44%, rgba(145,0,255,1) 100%);
 }
 .container{
     display: flex;
@@ -37,17 +37,18 @@ ul{
     height: 70px;
     size: unset;    
 }
-ul li a{
+.container nav ul li {
     padding-left: 40px;
+    transform: scale(0.9);
+    transition: all ease 0.2s;
+}
+.container nav ul li a {
     color: #dadada;
     font-size: 130%;
 }
-ul li a:hover{
+.container nav ul li:hover{
     text-decoration: none;
-    font-weight: 600;
-    font-size: x-large;
-    margin-bottom: 0px;
-
+    transform: scale(1.02);
 }
 body{
     background-image:url(../img/beats.jpg);
