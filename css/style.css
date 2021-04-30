@@ -17,42 +17,58 @@ ul{
     height: 70px;
     background: linear-gradient(90deg, rgba(4,1,57,1) 0%, rgba(52,9,121,1) 44%, rgba(145,0,255,1) 100%);
 }
-.container{
+.header {
     display: flex;
     justify-content: space-between;
     width: 80%;
     margin: auto;
     padding-top: 7px;
 }
-.container nav ul{
+.header nav ul{
     display: flex;
     width: 50%;
     justify-content: space-between;
     padding-top: 20px;
 }
-.container h1{
-    color: #ffffff;
+.header h1{
+    transform: scale(0.9);
+    transition: ease-in .2s;
+    margin-bottom: 8px;
 }
-.container h1 img{
+.header h1:hover {
+    transform: scale(1.2);
+}
+.header h1 img{
     height: 70px;
     size: unset;    
 }
-.container nav ul li {
+.header nav ul li {
     padding-left: 40px;
     transform: scale(0.9);
     transition: all ease 0.2s;
 }
-.container nav ul li a {
+.header nav ul li a {
     color: #dadada;
     font-size: 130%;
 }
-.container nav ul li:hover{
+.header nav ul li:hover{
     text-decoration: none;
-    transform: scale(1.02);
+    transform: scale(1.04);
 }
 body{
-    background-image:url(../img/beats.jpg);
+    background-image:url(../img/beats.png);
     background-attachment: fixed;
     background-size: 105%;
     height: 100%;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(4,1,57,1) 0%, rgba(52,9,121,1) 44%, rgba(145,0,255,1) 100%);
+    position: fixed;
+    bottom: 0;
+    color: white;
 }
