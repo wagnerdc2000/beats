@@ -61,6 +61,18 @@ body{
     background-size: 105%;
     height: 100%;
 }
+.main {
+    width: 80%;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.226) ;
+    color:white;
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+}
+.main h2 {
+    margin-bottom: 20px;
+}
 .footer{
     display: flex;
     justify-content: center;
