@@ -14,7 +14,8 @@ ul{
 /*TOPO*/
 #topo{
     width: 100%;
-    background: linear-gradient(90deg, rgba(4,1,57,1) 0%, rgba(52,9,121,1) 44%, rgba(145,0,255,1) 100%);
+    background: linear-gradient(90deg, #040139cb 0%, #340979b2 44%, #9000ffad 100%);
+    position: fixed;
 }
 .header {
     display: flex;
@@ -29,12 +30,12 @@ ul{
     justify-content: space-between;
 }
 .header h1{
-    transform: scale(0.9);
+    transform: scale(1);
     transition: ease-in .2s;
-    margin-bottom: 8px;
+    padding-top: 8px;
 }
 .header h1:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .header h1 img{
     height: 40px;
@@ -64,15 +65,38 @@ body{
 }
 .main {
     width: 80%;
-    margin: 50px auto;
-    background-color: rgba(255, 255, 255, 0.226) ;
-    color:white;
+    margin: 170px auto;
     text-align: center;
-    padding: 30px;
-    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 105px;
 }
 .main h2 {
     margin-bottom: 20px;
+}
+.playlist{
+    background:#ddb9f8 ;
+    border-radius: 7px;
+}
+.playlist img {
+    width: 250px;
+    border-radius: 7px 7px 0 0;
+}
+.playlist h4{
+    color:rgb(61, 61, 61);
+    margin: 0;
+    font-size: 120%;
+}
+.playlist div{
+    display: flex;
+    justify-content: space-between;
+}
+.playlist div span img{
+    background: #040139;
+    width: 50px;
+    padding: 7px 10px 7px 5px;
+    border-radius: 0 50% 50% 0;
 }
 .footer{
     display: flex;
@@ -81,7 +105,5 @@ body{
     height: 60px;
     width: 100%;
     background: linear-gradient(90deg, rgba(4,1,57,1) 0%, rgba(52,9,121,1) 44%, rgba(145,0,255,1) 100%);
-    position: fixed;
-    bottom: 0;
     color: white;
 }
