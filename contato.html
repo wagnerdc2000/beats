@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <script src="./js/script.js"></script>
     <title>Beats - Contato</title>
 </head>
+
 <body>
     <header id="topo">
         <div class="header">
@@ -24,14 +26,19 @@
     <main class="main-contato">
         <h4>Entre em contato conosco</h4>
         <form class="form1">
-            Seu nome: <input type="text" name="nome" id="nome"><br>
-            Seu email: <input type="email" name="email" id="email"><br>
-            conteúdo: <input type="text" id="conteudo"><br>
-            <button type="reset"><p>Enviar</p></button>
-          </form>
+            <div class="nomeemail">
+                <input type="text" name="nome" id="nome" placeholder="Seu nome"><br>
+                <input type="email" name="email" id="email" placeholder="exemplo@gmail.com"><br>
+            </div>
+            <textarea name="conteúdo" id="conteudo" cols="30" rows="10" placeholder="Conteúdo"></textarea>
+            <button type="reset" class="button">
+                <p>Enviar</p>
+            </button>
+        </form>
     </main>
     <footer class="footer">
         <p>Beats Copyright©️. LTDA.</p>
     </footer>
 </body>
+
 </html>

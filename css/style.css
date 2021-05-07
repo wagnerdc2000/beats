@@ -84,22 +84,57 @@ body{
 }
 .main-contato{
     width: 80%;
-    margin: 170px auto;
+    margin: 150px auto;
     text-align: center;
+    
 }
 .main-contato h4{
     color: white;
     font-size: 25px;
 }
 .form1{
-    width: 60%;
-    height: 50%;
-    margin: 100px auto;
-    padding:30px 0 20px 0;
+    width: 50%;
+    margin: 40px auto;
     background: rgba(255, 255, 255, 0.337);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 4%;
+}
+.nomeemail{
+margin: 0px 30px 0px 0px;
+display: grid;
+}
+#conteudo{
+    width: 200px;
+    height: 100px;
+    border-radius: 7px;
+    text-align: center;
+}
+.button{
+    width: 409px;
+    height: 35px;
+    border-radius: 30px;
+    background: #9100ff;
+    color:white;
+    font-size: 110%;
+    border-style: none;
+    margin-top: 10px;
+}
+#nome{
+    border-radius: 7px;
+    border-style: none;
+    text-align: center;
+    height: 40px;
+}
+#email{
+    border-radius: 7px;
+    border-style: none;
+    text-align: center;
+    height: 40px;
 }
 .main h2 {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 .null{
     width: 100%;
