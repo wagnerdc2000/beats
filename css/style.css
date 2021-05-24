@@ -53,8 +53,9 @@ ul{
 }
 .header nav ul li:hover{
     text-decoration: none;
-    background-color: rgba(4,1,57,1);
+    background-color: #040139;
 }
+/*body/ main*/
 body{
     background-image:url(../img/beats.png);
     background-attachment: fixed;
@@ -84,13 +85,44 @@ body{
 }
 .main-contato{
     width: 80%;
-    margin: 150px auto;
     text-align: center;
+    display: block;
+    justify-items: center;
+    align-items: center;
     
 }
 .main-contato h4{
     color: white;
     font-size: 25px;
+    padding-top: 100px;
+}
+.pagPlaylist{
+    width: 80%;
+    margin: 100px auto 20px auto;
+    text-align: center;
+    display: block;
+}
+.pagPlaylist img{
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+}
+.table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin: 30px auto auto auto;
+    width: 500px;
+}
+.table th, td{
+    
+    background: linear-gradient(90deg, #040139cb 0%, #340979b2 44%, #9000ffad 100%);
+    padding:3px;
+    color: white;
+    text-align: center;
+}
+.table td{
+  border: 1px solid ;
+  
 }
 .form1{
     width: 50%;
