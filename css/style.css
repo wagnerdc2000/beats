@@ -69,7 +69,7 @@ body{
 #banner img{
     width: 100%;
 }
-.main {
+.main-about{
     width: 80%;
     margin: 170px auto;
     text-align: center;
@@ -77,6 +77,30 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 105px;
+}
+.main-about{
+    width: 40%;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+.main-about div h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+    margin-top: -50px;
+}
+.main-about img{
+    size: 100%;
+    width: 90%;
+    height: 300px;
+}
+.main-about div p{
+    
+    margin-top: 20px;
+    font-size: 20px;
+}
+.main-about div .finalPara{
+    margin-bottom: -130px;
 }
 .main-playlist{
     width: 80%;
@@ -90,7 +114,7 @@ body{
 .main-contato{
     width: 80%;
     text-align: center;
-    display: block;
+    display: inline;
     justify-items: center;
     align-items: center;
     
