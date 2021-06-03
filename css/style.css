@@ -208,9 +208,6 @@ display: grid;
     border-radius: 7px;
     display: grid;
 }
-.playlist div {
-    
-}
 .playlist div span {
     display: flex;
 }
