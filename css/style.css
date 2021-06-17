@@ -34,7 +34,6 @@ audio {
 }
 .header nav ul{
     display: flex;
-    width: 50%;
     justify-content: space-between;
 }
 .header h1{
@@ -260,7 +259,20 @@ display: grid;
     width: 100%;
     background: linear-gradient(90deg, rgba(4,1,57,1) 0%, rgba(52,9,121,1) 44%, rgba(145,0,255,1) 100%);
     color: white;
-}@media(max-width: 768px){
+}
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+@media(max-width: 768px){
     .form1 {
         width: 60%;
         margin: 60px auto;
@@ -270,6 +282,18 @@ display: grid;
         justify-content: center;
         padding: 4%;
         border-radius: 5px;
+    }
+    .checkbtn {
+        font-size: 25px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    #check {
+        display: none;
     }
 }
 @media (max-width: 425px) {
@@ -362,12 +386,6 @@ display: grid;
         margin: 5px;
         width: 270px;
     }
-    .header nav ul {
-        display: flex;
-        width: 50%;
-        justify-content: space-between;
-        margin-left: 35px;
-    }
     .main-contato h4 {
         color: white;
         font-size: 25px;
@@ -401,7 +419,7 @@ display: grid;
         width: 360px;
     }
     .header nav ul li{
-        padding: 30px 18px;
+        padding: 0px 18px;
     }
     .table{
         width: 400px;
@@ -414,6 +432,44 @@ display: grid;
     }
     .footer{
         height: 75px;
+    }
+    .checkbtn {
+        font-size: 25px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 20px;
+        cursor: pointer;
+        display: block;
+    }
+    #check {
+        display: none;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 70vh;
+        background:linear-gradient(90deg, #040139cb 0%, #340979b2 44%, #9000ffad 100%);
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 40px;
+    }
+    a:active, a:hover{
+        background: none;
+    }
+    #check:checked ~ ul{
+        left: 0;
     }
 }
 @media (max-width: 375px) {
@@ -455,16 +511,51 @@ display: grid;
     .pagPlaylist h3 {
         margin-left: 50px;
     }
+    .checkbtn {
+        font-size: 25px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 20px;
+        cursor: pointer;
+        display: block;
+    }
+    #check {
+        display: none;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 70vh;
+        background:linear-gradient(90deg, #040139cb 0%, #340979b2 44%, #9000ffad 100%);
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 40px;
+    }
+    a:active, a:hover{
+        background: none;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
 }
 @media (max-width: 320px) {
     .header h1 img {
         width: 80px;
     }
-    #nav {
-        margin-left: -30px;
-    }
     .header nav ul li {
-        padding: 30px 13px;
+        padding: 0px 0px;
     }
     .table {
         width: 300px;
@@ -503,5 +594,43 @@ display: grid;
     .main {
         width: 90%;
         gap: 20px;
+    }
+    .checkbtn {
+        font-size: 25px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 20px;
+        cursor: pointer;
+        display: block;
+    }
+    #check {
+        display: none;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 70vh;
+        background:linear-gradient(90deg, #040139cb 0%, #340979b2 44%, #9000ffad 100%);
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 40px;
+    }
+    a:active, a:hover{
+        background: none;
+    }
+    #check:checked ~ ul{
+        left: 0;
     }
 } 
